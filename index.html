@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Pojištění</title>
+    <link rel="stylesheet" href="css/styly.css" type="text/css" />
+    <link rel="shortcut icon" href="obrazky/favicon.png" />
+
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <h1>Pojištění<span>App</span></h1>
+            <small>Ivanka s.r.o.</small>
+        </div>
+        <nav>
+            <ul>
+                <li class="aktivni"><a href="index.html">Pojištěnci</a></li>
+                <li><a href="oaplikaci.html">O aplikaci</a></li>               
+                <li><a class="kontakt-tlacitko" href="kontakt.html">Kontakt na Helpdesk</a></li>
+            </ul>
+        </nav>
+</header>
+
+    <article class="domu-article">
+        <header>               
+            <h1>Pojištěnci</h1>
+        </header>
+    
+        <section>
+            <p>
+                Vítejte v aplikaci <strong>PojištěníApp</strong> nové pojišťovny <strong>Ivanka s.r.o.</strong>, kterou můžete využít ke vkládání nových pojištěnců a výpisu jejich seznamu.
+            </p>    
+            <p>
+                Pokud máíte s čímkoli problém, můžete kontaktovat <a href="kontakt.html">Helpdesk.</a>                    
+            </p>    
+            
+            <h2>Vložení nového pojištěnce</h2>
+            
+            <div>
+                Jméno<br>
+                <input type="text" id="jmeno" placeholder="Vyplňte jméno"><br><br>
+                Příjmení<br>
+                <input type="text" id="prijmeni" placeholder="Vyplňte příjmení"><br><br>
+                Věk<br>
+                <input type="number" id="vek" placeholder="Vyplňte věk"><br><br>
+                Telefon<br>
+                <input type="tel" id="telefon" placeholder="Vyplňte telefon"><br><br>
+                <button id="ulozit">Uložit nového pojištěnce</button>
+            </div>   
+                        
+        </section>   
+        <img src="obrazky/avatar.png" id="bla" alt="Pojišťovna Ivanka s.r.o." />
+        
+        <section>
+            <h2>Seznam pojištěnců</h2>  
+            <div id="seznam-klientu"></div>
+        </section>   
+    </article>
+
+	<script src="js/Klient.js" ></script>
+    <script src="js/KlientRepositar.js"></script>
+    <script src="js/obsluha.js" ></script>
+	
+    <footer>
+        Vytvořila &copy;Ivanka 2023 pro <a href="https://itnetwork.cz">ITnetwork.cz</a>
+    </footer>
+    
+	
+</body>
+
+</html>
